@@ -1,0 +1,48 @@
+# Ruta base de las tablas
+ruta = {
+    "pathDate": "\\bootdrv\AlohaQS\\",
+}
+# Objeto donde se mostraran los datos.
+datos = []
+# Lista de restaurantes.
+restaurantes = [
+    { "rest": "LC01", "ip":  "10.5.1.100", "status": 0},
+    { "rest": "LC02", "ip":  "10.5.2.100", "status": 0},
+    { "rest": "LC03", "ip":  "10.5.3.100", "status": 0},
+    { "rest": "LC04", "ip":  "10.5.4.100", "status": 0},
+    { "rest": "LC05", "ip":  "10.5.5.100", "status": 0},
+    { "rest": "LC06", "ip":  "10.5.6.100", "status": 0},
+    { "rest": "LC07", "ip":  "10.5.7.100", "status": 0},
+    { "rest": "LC08", "ip":  "10.5.8.100", "status": 0},
+    { "rest": "LC09", "ip":  "10.5.9.100", "status": 0},
+    { "rest": "LC10", "ip": "10.5.10.100", "status": 0},
+    { "rest": "LC11", "ip": "10.5.11.100", "status": 0},
+    { "rest": "LC12", "ip": "10.5.12.100", "status": 0},
+    { "rest": "LC13", "ip": "10.5.13.100", "status": 0},
+    { "rest": "LC14", "ip": "10.5.14.100", "status": 0},
+    { "rest": "LC15", "ip": "10.5.15.100", "status": 0},
+    { "rest": "LC16", "ip": "10.5.16.100", "status": 0},
+    { "rest": "LC17", "ip": "10.5.17.100", "status": 0},
+    { "rest": "LC18", "ip": "10.5.18.100", "status": 0},
+    { "rest": "LC19", "ip": "10.5.19.100", "status": 0},
+    { "rest": "LC20", "ip": "10.5.20.100", "status": 0},
+    { "rest": "LC21", "ip": "10.5.21.100", "status": 0},
+    { "rest": "LC22", "ip": "10.5.22.100", "status": 0},
+    { "rest": "LC23", "ip": "10.5.23.100", "status": 0},
+    { "rest": "LC24", "ip": "10.5.24.100", "status": 0},
+    { "rest": "LC25", "ip": "10.5.25.100", "status": 0},
+    { "rest": "LC26", "ip": "10.5.26.100", "status": 0},
+    { "rest": "LC27", "ip": "10.5.27.100", "status": 0},
+    { "rest": "LC28", "ip": "10.5.28.100", "status": 0},
+    { "rest": "LC29", "ip": "10.5.29.100", "status": 0},
+    { "rest": "LC30", "ip": "10.5.30.100", "status": 0},
+    { "rest": "LC31", "ip": "10.5.31.100", "status": 0},
+    { "rest": "LC32", "ip": "10.5.32.100", "status": 0},
+    { "rest": "LC33", "ip": "10.5.33.100", "status": 0},
+    { "rest": "LC34", "ip": "10.5.34.100", "status": 0},
+    { "rest": "LC35", "ip": "10.5.35.100", "status": 0},
+    { "rest": "LC36", "ip": "10.5.36.100", "status": 0},
+    { "rest": "LC37", "ip": "10.5.37.100", "status": 0},
+    { "rest": "LC38", "ip": "10.5.38.100", "status": 0},
+    { "rest": "LC39", "ip": "10.5.39.100", "status": 0},
+]
