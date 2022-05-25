@@ -3,7 +3,7 @@ from data import datos, restaurantes, ruta
 from procedure_ip import isIpActive
 from procedure_file import readDBF 
 
-def setDate(initDate, finalDate, weekDate):
+def setDate(reportType, initDate, finalDate, weekDate):
     # Nombre de la tabla a leer
     nameDbf = '\GNDSALE.Dbf'
     # Control de fechas a formato de Aloha
@@ -21,9 +21,9 @@ def setDate(initDate, finalDate, weekDate):
             rutaWeekDate = '\\\\' + rest['ip'] + ruta['pathDate'] + weekDate + nameDbf
                 
             #2. Obtener datos de las fechas solicitadas.
-            resultInitDate = readDBF(rutaInitDate)
-            resultFinalDate = readDBF(rutaFinalDate)
-            resultWeekDate = readDBF(rutaWeekDate)
+            resultInitDate = readDBF(reportType, rutaInitDate)
+            resultFinalDate = readDBF(reportType, rutaFinalDate)
+            resultWeekDate = readDBF(reportType, rutaWeekDate)
             
             #3. Mandar datos al objeto
             result = {

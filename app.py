@@ -4,6 +4,7 @@ from flask_cors import CORS
 from data import datos
 from procedure import setDate
 
+
 app = Flask(__name__)
 CORS(app)
 
@@ -15,6 +16,7 @@ def getDate():
 def date():
     #1. Recibimos las fechas.
     dates = {
+        "reportType": request.json['reportType'],
         "initDate": request.json['initDate'],
         "finalDate": request.json['finalDate'],
         "weekDate": request.json['weekDate']
@@ -24,11 +26,16 @@ def date():
     datos.clear()
     
     #3. Enviamos a procesar las fechas.
-    setDate(dates['initDate'], dates['finalDate'], dates['weekDate'])
+    setDate(
+        dates['reportType'], 
+        dates['initDate'], 
+        dates['finalDate'], 
+        dates['weekDate']
+    )
 
     #4. Enviamos el resultado.
     return jsonify(datos)
-    
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
